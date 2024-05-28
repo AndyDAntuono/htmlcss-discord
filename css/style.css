@@ -38,14 +38,14 @@ footer {
 
 .col-16 {
     width: calc(100% / 6);
-    border: 1 px white;
+    border: 1px solid white;
     background-color: aquamarine;
     height: 500px;
 }
 
 .col-33 {
     width: calc(100% / 6 * 2);
-    border: 1 px black;
+    border: 1px solid black;
     background-color: salmon;
     height: 500px;
 }
@@ -90,6 +90,10 @@ ul.text-center {
     list-style: none;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 /*SPECIFC STYLING SELECTOR AND CLASSES*/
 
 ul.text-center li {
@@ -118,15 +122,25 @@ ul.text-center li {
     background-color: darkgreen;
 }
 
+.bg-aqua {
+    background-color: aquamarine;
+    padding: 20px 0;
+}
+
 .h-700 {
     height: 700px;
 }
 
 .top-footer {
-    border: 1pc solid grey;
+    border-bottom: 1px solid grey;
     padding: 5px 0 15px 0;
 }
 
 .bottom-footer {
-    padding-top: 10px;
+    padding-top: 25px;
+}
+
+.box-bottom-footer {
+    background-color: pink;
+    padding: 10px;
 }
