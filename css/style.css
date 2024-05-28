@@ -121,3 +121,12 @@ ul.text-center li {
 .h-700 {
     height: 700px;
 }
+
+.top-footer {
+    border: 1pc solid grey;
+    padding: 5px 0 15px 0;
+}
+
+.bottom-footer {
+    padding-top: 10px;
+}
