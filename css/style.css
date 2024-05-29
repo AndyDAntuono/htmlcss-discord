@@ -4,8 +4,12 @@
 	box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
-    background-color: lightblue;
+    background-color: rgba(37,94,233,255);
     padding: 15px 0;
 }
 
@@ -32,48 +36,31 @@ footer {
 
 .col-15 {
     width: 15%;
-    border: 1px solid black;
-    background-color: orange;
 }
 
 .col-16 {
     width: calc(100% / 6);
-    border: 1px solid white;
-    background-color: aquamarine;
-    height: 500px;
 }
 
 .col-33 {
     width: calc(100% / 6 * 2);
-    border: 1px solid black;
-    background-color: salmon;
-    height: 500px;
 }
 
 .col-40 {
     width: 40%;
-    border: 1px solid black;
-    background-color: pink;
-    height: 500px;
 }
 
 .col-60 {
     width: 60%;
-    border: 1px solid black;
-    background-color: blue;
 }
 
 .col-70 {
     width: 70%;
-    border: 1px solid black;
-    background-color: orange;
 }
 
 .col-100 {
     width: 100%;
-    border: 1px solid black;
-    background-color: rgb(255, 40, 176);
-    height: 300px;
+    text-align: center;
 }
 
 /*UTILITY CLASSES*/
@@ -88,6 +75,7 @@ footer {
 
 ul.text-center {
     list-style: none;
+    color: white;
 }
 
 .justify-between {
@@ -98,6 +86,12 @@ ul.text-center {
 
 ul.text-center li {
     display: inline-block;
+    margin: 0 10px;
+}
+
+.ul.text-center li a{
+    text-decoration: none;
+    color: white;
 }
 
 .py-10 {
@@ -108,9 +102,24 @@ ul.text-center li {
     padding: 50px 0;
 }
 
-.bg-darkblue {
-    background-color: darkblue;
-    padding: 12px 0;
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.me-10 {
+    margin-right: 10px;
+}
+
+.jumbo-tron {
+    padding: 50px 0;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg-grey {
@@ -118,17 +127,8 @@ ul.text-center li {
     background-color: grey;
 }
 
-.bg-darkgreen {
-    background-color: darkgreen;
-}
-
 .bg-aqua {
-    background-color: aquamarine;
     padding: 20px 0;
-}
-
-.h-700 {
-    height: 700px;
 }
 
 .top-footer {
@@ -141,6 +141,100 @@ ul.text-center li {
 }
 
 .box-bottom-footer {
-    background-color: pink;
     padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.btn-blue {
+    background-color: rgba(114,137,218,255);
+    color: white;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+h1,h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+h4 {
+    font-size: 25px;
+    color: rgba(114,137,218,255);
+}
+
+.content p {
+    margin-bottom: 40px;
+}
+
+.starred-title {
+    background-image: url(../img/stars.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.wave {
+    background-image: url(../img/wave.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+    filter: opacity(0.5);
+}
+
+.rotate-wave {
+    transform: rotate(180deg);
+}
+
+.language {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.language img {
+    width: 25px;
+}
+
+.languag p {
+    margin: 0px 5px;
+}
+
+.icons {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.link-list-head {
+    color: rgba(114,137,218,255);
+}
+
+.link-lits-items ul{
+    list-style-type: none;
+}
+
+.link-lits-items ul, li {
+    margin-top: 5px;
 }
